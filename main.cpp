@@ -8,7 +8,7 @@
 #include "Animacao.h"
 #include "Entrada.h"
 #include "Movimentos.h"
-#include <sstream>>
+#include <sstream>
 #include <string>
 #include "unistd.h"
 #include "MedidasBase.h"
