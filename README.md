@@ -1,9 +1,31 @@
 # STEF
+
+## Rodando
 Para que a imagem seja gerada corretamente, é necessário gerar o arquivo exe e rodar por lá (junto com os txts respectivos)
 
-## INSTALAÇÃO
-Instalação da biblioteca FreeGlut no Code::Blocks
-http://wiki.codeblocks.org/index.php/Using_FreeGlut_with_Code::Blocks
+### Ubuntu
+
+#### Requisitos
+É preciso instalar o C++, cmake, OpenGL e OpenCV.
+
+```bash
+sudo apt-get install g++ cmake
+sudo apt-get install freeglut3 freeglut3-dev
+sudo apt-get install libopencv-dev
+```
+#### Compilando
+
+```bash
+cmake .
+make
+```
+
+#### Rodando
+
+```bash
+cd build
+./STEF
+```
 
 ## FUNCIONAMENTO BÁSICO
 1. É criado e instanciado um objeto `Factory`

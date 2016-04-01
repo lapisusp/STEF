@@ -22,7 +22,7 @@ GLint k = 0;
 int exp = Face::expressaoNeutra;
 Animacao* a;
 string img;
-BOOLEAN pontos=false;
+bool pontos=false;
 Grafo g(1000);
 
 
@@ -56,12 +56,12 @@ void display(void) {
 }
 
 /**
- Método provisório para ler txt da última face gerada
+ Mï¿½todo provisï¿½rio para ler txt da ï¿½ltima face gerada
  **/
 void displayMovimento(void) {
 	Saida saida;
 	glClear(GL_COLOR_BUFFER_BIT);
-	 // "pontos" só utilizado para exibir pontos antropométricos
+	 // "pontos" sï¿½ utilizado para exibir pontos antropomï¿½tricos
 	if(!pontos)e->arquivo("FaceMov.txt");
 	else e->arquivoOpcionalPontos("FaceMov.txt");
 	glFlush();
@@ -172,7 +172,7 @@ void GerenciaTeclado(unsigned char key, int x, int y) {
 		a->raiva(0.25);
 		img = "raiva25.jpg";
 	} else if(key==' ') {
-        // Só utilizado para exibir pontos antropométricos
+        // Sï¿½ utilizado para exibir pontos antropomï¿½tricos
 		a->neutra();
         pontos=true;
 		img = "neutraComPontos.jpg";
@@ -194,7 +194,7 @@ void GerenciaTeclado(unsigned char key, int x, int y) {
 	glFlush();
 	glutSwapBuffers();
 
-    // Só utilizado para exibir pontos antropométricos
+    // Sï¿½ utilizado para exibir pontos antropomï¿½tricos
 	pontos=false;
 }
 
