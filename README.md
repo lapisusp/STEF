@@ -1,5 +1,9 @@
 # STEF
 
+## Publicações
+
+* Testa, R. L.; Muniz, A. H. N. ; Carpio, L. U. S. ; Dias, R. G. ; Rocca, C. C. A. ; Machado-Lima, A. and  Nunes, F. L. S. **Generating Facial Emotions for Diagnosis and Training.** Computer-Based Medical Systems (CBMS), 2015 IEEE 28th International Symposium on. IEEE, 2015.
+
 ## Rodando
 Para que a imagem seja gerada corretamente, é necessário gerar o arquivo exe e rodar por lá (junto com os txts respectivos)
 
