@@ -1,23 +1,24 @@
-/*
- * Antropometria.h
- *
- *  Created on: 02/12/2013
- *      Author: rafaeltesta
- */
-
 #ifndef ANTROPOMETRIA_H_
 #define ANTROPOMETRIA_H_
 
 #include <GL/glut.h>
+#include <stdio.h>
+#include <iostream>
+#include "unistd.h"
+#include <fstream>
+#include "Grafo.h"
+ #include <iostream>
+    #include <cstdlib>
+    #include <ctime>
 
 class Antropometria {
 public:
 	const static GLint caucasiano=0;
 	const static GLint afro=1;
 
-	Antropometria(GLint, GLint, GLint);
+	Antropometria(GLint, GLint, GLint,Grafo);
 	virtual ~Antropometria();
-
+    void lerPontos();
 	void getSombrancelhaEsquerda(GLfloat[8][3]);
 	void getSombrancelhaDireita(GLfloat[8][3]);
 
@@ -46,7 +47,10 @@ public:
 	void getPalpebraEsquerda(GLfloat[4][3]);
 	void getPalpebraDireita(GLfloat[4][3]);
 
-	void getContornoEsquerdoCima(GLfloat cec[4][3]);
+	void getContornoEsquerdoCima(GLfloat cec[7][3]);
+    //
+    void getContornoQueixo(GLfloat queixo[3][3]);
+	//
 	void getContornoEsquerdoBaixo(GLfloat ceb[4][3]);
 	void getContornoDireitoCima(GLfloat cdc[4][3]);
 	void getContornoDireitoBaixo(GLfloat cdb[4][3]);
@@ -85,7 +89,7 @@ public:
 	void getPupilaDireita(GLfloat pd[1][3]);
 	GLfloat getRaioPupila();
 
-
+   // GLfloat getPulp();
 
 	void getAuxiliares(GLfloat aux[5][3]);
 

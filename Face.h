@@ -1,22 +1,17 @@
-/*
- * Face.h
- *
- *  Created on: 25/11/2013
- *      Author: rafaeltesta
- */
-
 #ifndef FACE_H_
 #define FACE_H_
 
 #include <stdlib.h>
+#include <stdio.h>
 #include "Desenha.h"
 #include "Movimentos.h"
 #include "Medidas.h"
 #include "Antropometria.h"
+#include "Grafo.h"
 
 class Face {
 public:
-	Face(GLint altura, GLint largura, GLint etinia);
+	Face(GLint altura, GLint largura, GLint etinia, Grafo g);
 	virtual ~Face();
 
 	void desenhaFace(GLint expressao, GLfloat quantidadeExpressao);
@@ -54,10 +49,14 @@ public:
 	GLfloat rodb [4][3];
 	GLfloat pe [4][3];
 	GLfloat pd [4][3];
-	GLfloat cec [4][3];
+	GLfloat cec [7][3];
 	GLfloat ceb [4][3];
-	GLfloat cdc [4][3];
+	GLfloat cdc [7][3];
 	GLfloat cdb [4][3];
+	//
+	GLfloat queixo[3][3];
+
+	//
 	GLfloat rtc [8][3];
 	GLfloat rtm [8][3];
 	GLfloat rtb [8][3];
@@ -139,9 +138,9 @@ private:
 	void desenhaPalpebraDireita();
 	void desenhaPalpebras();
 
-	void desenhaContronoEsquerdo();
+	void desenhaContornoEsquerdo();
 	void desenhaContornoDireito();
-	void desenhaControno();
+	void desenhaContorno();
 
 	void desenhaRugaTestaCima();
 	void desenhaRugaTestaMeio();
@@ -190,7 +189,7 @@ private:
 	GLint altura;
 	GLint largura;
 
-
+	FILE * pFile;
 
 };
 

@@ -1,21 +1,22 @@
-/*
- * Movimentos.h
- *
- *  Created on: 08/02/2014
- *      Author: rafa
- */
-
 #ifndef MOVIMENTOS_H_
 #define MOVIMENTOS_H_
 
 #include "Medidas.h"
 #include <GL/glut.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <iostream>
+#include <fstream>
+#include <string>
+#include "unistd.h"
 
 class Movimentos{
 public:
+    void AtualizaAlphas(int i);
+
 	Movimentos(GLint altura, GLint largura);
 	virtual ~Movimentos();
-
+    void movAlpha(GLfloat lsc[4][3], GLfloat lsb[4][3], GLfloat lic[4][3], GLfloat lib[4][3], GLfloat oeb[4][3], GLfloat oec[4][3], GLfloat odb[4][3], GLfloat odc[4][3], GLfloat pe[4][3], GLfloat pd[4][3], GLfloat roec[4][3], GLfloat roem[4][3], GLfloat roeb[4][3], GLfloat rodc[4][3], GLfloat rodm[4][3], GLfloat rodb[4][3],GLfloat intensidade, int exp);
 	//Action Unit 1 – Inner Brow Raiser
 	void au1InnerBrowRaiser(GLfloat se[8][3], GLfloat sd[8][3], GLfloat rctc[4][3], GLfloat rctm[4][3], GLfloat rctb[4][3], GLfloat intensidade);
 	//Action Unit 2 – Outer Brow Raiser

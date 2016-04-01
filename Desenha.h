@@ -1,9 +1,3 @@
-/*
- * Desenha.h
- *
- *  Created on: 25/11/2013
- *      Author: rafaeltesta
- */
 
 #ifndef DESENHA_H_
 #define DESENHA_H_
@@ -14,10 +8,11 @@ class Desenha {
 public:
 	Desenha(GLint, GLint, GLfloat);
 	virtual ~Desenha();
-	void desenhaCurva(GLfloat[][3], GLint);
-	void desenhaPontos(GLfloat[][3], GLint);
-	void desenhaPontosAzul(GLfloat[][3], GLint);
-	void desenhaCirculo(GLfloat pontos[1][3], GLfloat r);
+	void desenhaCurva(GLfloat**, GLint);
+	void desenhaPontos(GLfloat**, GLint);
+	void desenhaPontosAzul(GLfloat**, GLint);
+	void desenhaCirculo(GLfloat x, GLfloat y);
+	void desenhaCirculoPontoVermelho(GLfloat x, GLfloat y);
 	void alteraEspessuraLinha(GLfloat espessura);
 	const static GLfloat espessuraPadrao=3.0;
 private:
@@ -26,7 +21,7 @@ private:
 	GLfloat escala;
 	GLfloat espessuraLinha;
 
-	void escalar(GLfloat pontos[][3] ,GLint nPontos);
+	void escalar(GLfloat** pontos,GLint nPontos);
 };
 
 #endif /* DESENHA_H_ */

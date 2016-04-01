@@ -1,10 +1,3 @@
-/*
- * Medidas.h
- *
- *  Created on: 25/11/2013
- *      Author: rafaeltesta
- */
-
 #ifndef MEDIDAS_H_
 #define MEDIDAS_H_
 

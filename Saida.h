@@ -1,10 +1,3 @@
-/*
- * Saida.h
- *
- *  Created on: 25/11/2013
- *      Author: rafaeltesta
- */
-
 #ifndef SAIDA_H_
 #define SAIDA_H_
 

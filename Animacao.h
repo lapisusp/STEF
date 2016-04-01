@@ -1,10 +1,3 @@
-/*
- * Animacao.h
- *
- *  Created on: 28/11/2013
- *      Author: rafaeltesta
- */
-
 #ifndef ANIMACAO_H_
 #define ANIMACAO_H_
 #include "Face.h";
@@ -15,13 +8,12 @@ public:
 	Animacao();
 	Animacao(GLint altura, GLint largura, GLint etinia);
 	virtual ~Animacao();
-	void satisfacao();
-	void tristeza();
-	void surpresa();
-	void medo();
-	void aversao();
-	void raiva();
-	void desprezo();
+	void satisfacao(GLfloat intensidade);
+	void tristeza(GLfloat intensidade);
+	void surpresa(GLfloat intensidade);
+	void medo(GLfloat intensidade);
+	void aversao(GLfloat intensidade);
+	void raiva(GLfloat intensidade);
 	void neutra();
 private:
 	Face* face;
