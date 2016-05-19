@@ -15,7 +15,7 @@ class RafaMedidas: public MedidasBase{
             string line2;
             float n;
             int i=0;
-            if (emotion==1) infilestream.open("1_Alfas_Neutra_Satisfação.txt");
+            if (emotion==1) infilestream.open("1_Alfas_Neutra_Satisfacao.txt");
             if (emotion==2) infilestream.open("2_Alfas_Neutra_Tristeza.txt");
             if (emotion==3) infilestream.open("3_Alfas_Neutra_Surpresa.txt");
             if (emotion==4) infilestream.open("4_Alfas_Neutra_Medo.txt");

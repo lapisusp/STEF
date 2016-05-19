@@ -63,12 +63,12 @@ Exemplo. Quando digitado:
 ```bash
 > 1
 ```
-O método acessado é `animação->satisfação(1)` (o `1` do argumento é a intensidade, 100% neste caso).
+O método acessado é `animacao->satisfacao(1)` (o `1` do argumento é a intensidade, 100% neste caso).
 
 ```bash
 > 2
 ```
-O método acessado é `animação->tristeza(1)` e assim por diante.
+O método acessado é `animacao->tristeza(1)` e assim por diante.
 
 Isso ocorre no main, mas os métodos de cada emoção estão na classe animação. Dentro desses métodos é chamado o `desenhaFace` da classe `Face`.
 
