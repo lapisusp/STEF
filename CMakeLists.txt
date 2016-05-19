@@ -3,6 +3,14 @@ cmake_minimum_required(VERSION 2.8.4)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/build")
 
 #########################################################
+# Copy graph and alpha data to the build directory
+#########################################################
+file(GLOB GRAPH_DATA
+        "data/*.txt"
+     )
+file(COPY ${GRAPH_DATA} DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
+
+#########################################################
 # FIND GLUT
 #########################################################
 find_package(GLUT REQUIRED)
