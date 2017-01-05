@@ -7,6 +7,15 @@
 ## Rodando
 Para que a imagem seja gerada corretamente, é necessário gerar o arquivo exe e rodar por lá (junto com os txts respectivos)
 
+### Docker (modo fácil)
+
+[Instalar docker](https://docs.docker.com/engine/installation/)
+
+```bash
+bash build.sh
+bash run.sh
+```
+
 ### Ubuntu
 
 #### Requisitos
@@ -21,7 +30,9 @@ sudo apt-get install libopencv-dev
 #### Compilando
 
 ```bash
-cmake .
+mkdir build
+cd build
+cmake ..
 make
 ```
 
